@@ -1,0 +1,365 @@
+.form {
+  background-color: #fff;
+
+  input {
+    border: 1px solid #C0C0C0;
+    border-radius: 5px;
+
+    &::placeholder {
+      color: #000000;
+    }
+  }
+
+  &__inner {
+    margin: 0 0 40px -30px;
+    display: flex;
+    align-items: center;
+
+    .form__select-wrap,
+    .form__input-wrap {
+      margin: 0 0 0 30px;
+      width: calc(33.33333% - 30px);
+    }
+
+    &--social {
+      input {
+        padding: 5px 15px 5px 45px !important;
+      }
+    }
+  }
+
+  &__input-img {
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    left: 15px;
+  }
+
+  &__input-wrap {
+    &--mail {
+      max-width: 270px;
+      width: 100% !important;
+    }
+  }
+
+  &__inner-price {
+    margin: 40px 0 30px -30px;
+
+    .form__select-wrap,
+    .form__input-wrap {
+      max-width: 240px;
+      width: 100%;
+    }
+  }
+
+  &__inner-requred {
+    input {
+      width: calc(100% - 26px) !important;
+    }
+
+    .form__input-wrap {
+      position: relative;
+    }
+
+    .form__icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 5px;
+    }
+  }
+
+  .select2-container {
+    width: 100% !important;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    height: 50px;
+    color: #000000;
+    padding: 10px 15px 10px 15px;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 5px;
+    height: 50px;
+  }
+
+  .select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #C0C0C0;
+    border-radius: 5px;
+    height: 50px;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #00040E;
+    border-style: solid;
+    border-width: 1px;
+    height: 7px;
+    width: 7px;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg) translate(-50%, -50%);
+  }
+
+  &__select-wrap,
+  &__input-wrap {
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 5px 15px;
+      height: 50px;
+      outline: none;
+    }
+  }
+
+  &__sup {
+    position: absolute;
+    top: -7px;
+    left: 10px;
+    padding: 0 5px;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #343C66;
+    z-index: 20;
+  }
+
+  &__labels-wrap {
+    margin: 0 0 40px 0;
+  }
+
+  &__checkbox-wrapper {
+    margin: 0 0 30px 0;
+    display: flex;
+
+    .form__label {
+      margin: 0 40px 0 0;
+    }
+  }
+
+  &__checkbox-fake {
+    margin: 0 8px 0 0;
+  }
+
+  &__radio-fake {
+    margin: 0 8px 0 0;
+  }
+
+  &__label-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__label {
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__radio,
+  &__checkbox {
+    display: none;
+  }
+
+  &__radio-fake,
+  &__checkbox-fake {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #C0C0C0;
+    border-radius: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $orange;
+      opacity: 0;
+      transition: linear .1s;
+    }
+  }
+
+  &__checkbox-fake {
+    min-width: 15px;
+    max-width: 15px;
+    min-height: 15px;
+    max-height: 15px;
+    border-radius: 3px;
+
+    &::before {
+      background-color: transparent;
+      width: 10px;
+      height: 8px;
+      background-image: url("../images/dest/icons/check.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__radio:checked+.form__radio-fake,
+  &__checkbox:checked+.form__checkbox-fake {
+    border-color: $orange;
+  }
+
+  &__radio:checked+.form__radio-fake::before,
+  &__checkbox:checked+.form__checkbox-fake::before {
+    opacity: 1;
+  }
+
+  &__buttons {
+    margin: -15px 0 0 0;
+
+    .btn--orange2 {
+      margin: 0 0 0 25px;
+    }
+  }
+
+  &__input-show {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/dest/icons/eye-1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__input-show.active {
+    background-image: url("../images/dest/icons/eye-2.svg");
+  }
+
+  &__edit {
+    margin: 5px 0 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h6 {
+      font-family: 'Comfortaa', sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      color: #343C66;
+    }
+
+    a {
+      font-family: 'Comfortaa', sans-serif;
+      font-size: 12px;
+      line-height: 13px;
+      text-decoration-line: underline;
+      color: $orange;
+
+      &:hover {
+        color: #353d66;
+      }
+    }
+    &--bottom{
+      border-top: 1px solid #340022;
+      padding: 30px 0 0 0;
+    }
+  }
+
+  &--login {
+    max-width: 512px;
+    width: 100%;
+
+    .form__input-wrap {
+      margin: 0 0 20px 0;
+    }
+
+    .form__label-text {
+      font-size: 12px;
+      line-height: 140%;
+      color: #00040E;
+    }
+
+    .form__label {
+      margin: 0;
+    }
+
+    .form__checkbox-fake {
+      margin: 0 10px 0 0;
+    }
+
+    .form__label-box {
+      margin: 0 0 40px 0;
+
+      a {
+        font-size: 12px;
+        color: #B8B7B7;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .form__select-wrap {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &--search {
+
+    .form__select-wrap,
+    .form__input-wrap {
+      margin: 0 0 15px 0;
+    }
+
+    .form__buttons {
+      margin: 30px 0 0 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btn {
+      max-width: 290px;
+      width: 100%;
+      margin: 0 0 15px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    a {
+      color: $orange;
+      text-decoration: underline;
+
+      &:hover {
+        color: #353d66;
+      }
+    }
+  }
+
+  &--registration {
+    .form__label-box a {
+      color: $orange;
+    }
+  }
+}

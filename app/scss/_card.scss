@@ -1,0 +1,349 @@
+.card {
+  position: relative;
+  padding: 20px 30px 20px 20px;
+  display: flex;
+  background: linear-gradient(330deg, #F2F2F2 13.4%, rgba(250, 235, 194, 0.05) 86.6%);
+  border-radius: 15px;
+  backdrop-filter: blur(150px);
+  margin: 0 0 30px 30px;
+  width: calc(50% - 30px);
+
+  &__stickers {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__stickers li {
+    min-width: 73px;
+    margin: 0 0 10px 0;
+    border-radius: 15px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    padding: 10px 15px;
+    text-transform: uppercase;
+  }
+
+  &__sticker-vip {
+    background-color: #FF561E;
+  }
+
+  &__sticker-new {
+    background-color: #00CB51;
+  }
+
+  &__img {
+    margin: 0 18px 0 0;
+    flex-shrink: 0;
+    width: 136px;
+    height: 146px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__box-top {
+    margin: 0 0 13px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__answer {
+    margin: 0 0 0 10px;
+    padding: 5px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140%;
+    text-align: center;
+    color: #005C54;
+    background-color: #B2DFDB;
+    border-radius: 3px;
+  }
+  &__box-avatar{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__region {
+    margin: 0 0 0 10px;
+    padding: 5px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140%;
+    text-align: center;
+    color: #005982;
+    background-color: #B3E5FC;
+    border-radius: 3px;
+  }
+
+  &__flag {
+    margin: 0 0 0 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 22px;
+    background-color: #FFE1F3;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  &__flag-one,
+  &__flag-two {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__flag-two {
+    display: none;
+  }
+
+  &__flag.active {
+    .card__flag-one {
+      display: none;
+    }
+
+    .card__flag-two {
+      display: block;
+    }
+  }
+
+  &__rate-wrap {
+    margin: 0 0 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 140%;
+      color: $blue;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0 0 10px 0;
+    position: relative;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+    color: #00040E;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    position: relative;
+    padding: 0 0 0 15px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #414C69;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 10px;
+      height: 17px;
+      background-image: url("../images/dest/icons/currency-dollar.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__date {
+    padding: 4px 13px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #3850CC;
+    background-color: #EFF1FA;
+    border-radius: 5px;
+  }
+
+  &--aside {
+    margin: 0 0 15px 30px;
+    padding: 14px 15px 17px 15px;
+    width: 100%;
+    background: #fff;
+
+    .card__img {
+      width: 87px;
+      height: 108px;
+    }
+
+    .card__stickers li {
+      padding: 4.5px 3.5px;
+      font-size: 12px;
+      line-height: 15px;
+      border-radius: 5px 0px;
+      min-width: fit-content;
+    }
+
+    .card__box-top {
+      margin: 0 0 9px 0;
+    }
+
+    .card__answer,
+    .card__region {
+      padding: 3px 5px;
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    .card__region {
+      margin: 0 0 0 5px;
+    }
+
+    .card__flag {
+      margin: 0 0 0 5px;
+      width: 26px;
+      height: 16px;
+
+      svg {
+        width: 6px;
+        height: 6px;
+      }
+    }
+
+    .card__rate-wrap {
+      margin: 0 0 3px 0;
+    }
+
+    .card__rate-wrap span {
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    .card__title {
+      margin: 0 0 5px 0;
+      font-size: 16px;
+      letter-spacing: 0px
+    }
+
+    .card__price {
+      font-size: 16px;
+      line-height: 20px;
+
+      &::before {
+        width: 8px;
+        height: 14px;
+      }
+    }
+
+    .card__date {
+      padding: 3px 5px;
+      font-size: 8px;
+      line-height: 10px;
+    }
+  }
+
+  &--ad {
+    margin: 0 0 30px 0;
+    padding: 30px;
+    width: 100%;
+    background: #fff;
+
+    .card__answer {
+      margin: 0 auto 0 10px;
+    }
+
+    .card__date,
+    .card__region,
+    .card__answer {
+      padding: 3px 10px;
+      font-size: 12px;
+      line-height: 140%;
+    }
+
+    .card__box-top {
+      margin: 0 0 5px 0;
+    }
+
+    .card__articl {
+      margin: 0 0 20px 0;
+      font-size: 12px;
+      color: #C0C0C0;
+    }
+
+    .card__title {
+      margin: 0 0 30px 0;
+      max-width: 450px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 140%;
+      letter-spacing: 0.03em;
+    }
+
+    .card__box {
+      width: 100%;
+    }
+
+    .card__price {
+      font-family: 'Comfortaa', sans-serif;
+      padding: 0 0 0 25px;
+      font-weight: 500;
+      font-size: 36px;
+      color: $orange;
+    }
+
+    .card__price::before {
+      width: 18px;
+      height: 30px;
+      background-image: url("../images/dest/icons/currency-dollar2.svg");
+    }
+  }
+  &--mob{
+    display: none;
+  }
+}
