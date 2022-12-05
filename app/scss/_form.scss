@@ -10,6 +10,64 @@
     }
   }
 
+  &__edit-mob {
+    display: none !important;
+  }
+
+  &__buttons-mob {
+    display: none;
+  }
+
+  &__input-singl {
+    margin: 0 0 28px 0;
+  }
+
+  &__input-date {
+    max-width: 505px;
+    width: 100%;
+  }
+
+  &__input-btn {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+
+    .form__input-wrap {
+      margin: 0 20px 0 0;
+      max-width: 277px;
+      width: 100%;
+    }
+
+    button {
+      padding: 5px 15px;
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid #C0C0C0;
+      border-radius: 5px;
+      text-align: left;
+      height: 50px;
+    }
+  }
+
+  &__input-card {
+    margin: 0 0 28px 0;
+    max-width: 505px;
+  }
+
+  p {
+    margin: 30px 0 28px 0;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #343C66;
+  }
+
+  &__input-btn input {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+
   &__inner {
     margin: 0 0 40px -30px;
     display: flex;
@@ -26,6 +84,10 @@
         padding: 5px 15px 5px 45px !important;
       }
     }
+  }
+
+  &__input-pasw input {
+    padding: 5px 45px 5px 15px !important;
   }
 
   &__input-img {
@@ -276,7 +338,8 @@
         color: #353d66;
       }
     }
-    &--bottom{
+
+    &--bottom {
       border-top: 1px solid #340022;
       padding: 30px 0 0 0;
     }

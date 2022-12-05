@@ -73,17 +73,20 @@
     background-color: #B2DFDB;
     border-radius: 3px;
   }
-  &__box-avatar{
+
+  &__box-avatar {
     width: 24px;
     height: 24px;
     border-radius: 50%;
     overflow: hidden;
-    img{
+
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
+
   &__region {
     margin: 0 0 0 10px;
     padding: 5px 10px;
@@ -343,7 +346,72 @@
       background-image: url("../images/dest/icons/currency-dollar2.svg");
     }
   }
-  &--mob{
+
+  &--mob {
     display: none;
+  }
+
+  &__btn-redact,
+  &__btn-delete {
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: 'Comfortaa', sans-serif;
+    line-height: 16px;
+    text-decoration-line: underline;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__btn-redact {
+    color: #00A697;
+    margin: 0 0 0 20px;
+  }
+
+  &__btn-delete {
+    color: #FF0000;
+    margin: 0 0 0 10px;
+  }
+
+  &__text {
+    margin: 0 0 10px 0;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  &--cabinet-ads {
+    padding: 20px;
+    width: 100%;
+
+    .card__box {
+      width: 100%;
+    }
+
+    .card__img {
+      width: 220px;
+    }
+
+    .card__box {
+      margin: -10px 0 0 0;
+    }
+
+    .card__box-top {
+      margin: 0 0 5px 0;
+    }
+    .card__answer{
+      margin: 0;
+    }
+    .card__rate-wrap {
+      margin: 0 0 3px 0;
+    }
+
+    .card__date {
+      margin: 0 0 -60px 0;
+    }
   }
 }

@@ -992,6 +992,7 @@
       <div class="container-fluid">
         <div class="cabinet-menu">
           <div class="cabinet-menu__inner">
+            <button class="cabinet-menu__close"></button>
             <div class="cabinet-menu__info">
               <div class="cabinet-menu__box">
                 <div class="cabinet-menu__avatar">
@@ -1088,9 +1089,18 @@
             </div>
           </div>
 
+          <button class="cabinet-show">
+            <span></span>
+            Александр Терещенко
+          </button>
+
           <div class="cabinet">
             <div class="cabinet__data-inner">
               <div class="cabinet__data-left">
+                <div class="form__edit form__edit-mob">
+                  <h6>Личные даные</h6>
+                  <a href="#">Редактировать</a>
+                </div>
                 <div class="cabinet__data-avatar">
                   <img src="images/dest/content/main/avatar-2.jpg" alt="avatar">
                 </div>
@@ -1101,7 +1111,7 @@
               </div>
               <div class="cabinet__data-right">
                 <form class="form">
-                  <div class="form__edit">
+                  <div class="form__edit form__edit-desk">
                     <h6>Личные даные</h6>
                     <a href="#">Редактировать</a>
                   </div>
@@ -1155,19 +1165,19 @@
                       <input type="text" placeholder="+38 012 345 67 89" readonly>
                     </div>
                     <div class="form__input-wrap">
-                        <div class="form__input-img">
+                      <div class="form__input-img">
                         <img src="images/dest/icons/telegram.svg" alt="icon">
                       </div>
                       <input type="text" placeholder="@example" readonly>
                     </div>
                     <div class="form__input-wrap">
-                        <div class="form__input-img">
+                      <div class="form__input-img">
                         <img src="images/dest/icons/whatsapp-icon.svg" alt="icon">
                       </div>
                       <input type="text" placeholder="+38 012 345 67 89" readonly>
                     </div>
                   </div>
-                  <div class="form__buttons">
+                  <div class="form__buttons form__buttons-desk">
                     <button class="btn btn--orange">Стать модератором</button>
                   </div>
                   <div class="form__edit form__edit--bottom">
@@ -1177,8 +1187,11 @@
                   <div class="form__inner">
                     <div class="form__input-wrap">
                       <span class="form__sup">Старый пароль</span>
-                      <input type="password" placeholder="********" readonly>
+                      <input type="password" placeholder="********">
                     </div>
+                  </div>
+                  <div class="form__buttons form__buttons-mob">
+                    <button class="btn btn--orange">Стать модератором</button>
                   </div>
                 </form>
               </div>

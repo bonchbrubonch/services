@@ -11,19 +11,25 @@ $(function () {
   $(".js-example-placeholder-category").select2({
     placeholder: "Категория",
   });
+
   $(".js-example-placeholder-country").select2({
     placeholder: "Страна",
   });
+
   $(".js-example-placeholder-state").select2({
     placeholder: "Область",
   });
 
+  $(document).ready(function () {
+    $('.subcategory__select').select2();
+  });
 
   /*start mob menu======*/
   $(".header__menu-btn").on("click", function () {
     $("body").addClass("lock");
     $(".header__list").addClass("open");
     $(".subcategory__left").removeClass("open");
+    $(".cabinet-menu").removeClass("open");
   });
 
   $(".header__close-menu").on("click", function () {
@@ -37,7 +43,7 @@ $(function () {
   });
   /*end mob menu======*/
 
-  /*start dilters==*/
+  /*start filters==*/
   $(".subcategory__filter-mob").on("click", function () {
     $("body").addClass("lock");
     $(".subcategory__left").addClass("open");
@@ -47,7 +53,18 @@ $(function () {
     $("body").removeClass("lock");
     $(".subcategory__left").removeClass("open");
   });
-  /*end dilters==*/
+  /*end filters==*/
+
+  /*start cabinet-show=======*/
+  $(".cabinet-show").on("click", function () {
+    $("body").addClass("lock");
+    $(".cabinet-menu").addClass("open");
+  });
+  $(".cabinet-menu__close").on("click", function () {
+    $("body").removeClass("lock");
+    $(".cabinet-menu").removeClass("open");
+  });
+  /*end cabinet-show=======*/
 
   /*start mob submenu==========*/
   $(".submenu__back-btn").on("click", function () {
@@ -186,9 +203,6 @@ $(function () {
     $(this).parent().toggleClass("open");
   });
 
-  $(document).ready(function () {
-    $('.subcategory__select').select2();
-  });
 
   $(".cabinet-menu__list li").on("click", function () {
     $(".cabinet-menu__list li").removeClass("active");

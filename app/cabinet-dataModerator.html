@@ -11,13 +11,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500&display=swap"
     rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="css/app.min.css">
 </head>
@@ -59,7 +63,12 @@
             </nav>
             <div class="header__box">
               <a href="#" class="header__sell btn btn--orange">Подать объявление</a>
-              <a href="#" class="header__enter btn btn--transparent">Вход</a>
+              <a href="#" class="header__enter btn btn--transparent">
+                <span>
+                  <img src="images/dest/content/main/avatar-2.jpg" alt="avater">
+                </span>
+                Александр
+              </a>
             </div>
             <div class="header__box-mob">
               <a href="#">
@@ -980,56 +989,242 @@
         </div>
       </header>
 
-      <section class="login">
-        <div class="container">
-          <div class="login__inner">
-            <div class="login__left">
-              <a href="#" class="login__logo">
-                <img src="images/dest/icons/logo.svg" alt="logo">
-              </a>
-              <div class="login__left-info">
-                <p>Рады видеть Вас снова</p>
-                <h4>Добро пожаловать</h4>
-                <span></span>
-                <p>Пожалуйста войдите в Ваш аккаунт, что бы получить доступ к информации</p>
+      <div class="container-fluid">
+        <div class="cabinet-menu">
+          <div class="cabinet-menu__inner">
+            <button class="cabinet-menu__close"></button>
+            <div class="cabinet-menu__info">
+              <div class="cabinet-menu__box">
+                <div class="cabinet-menu__avatar">
+                  <img src="images/dest/content/main/avatar-2.jpg" alt="avatar">
+                </div>
+                <div class="cabinet-menu__text">
+                  <div class="cabinet-menu__status">
+                    модератор
+                  </div>
+                  <div class="cabinet-menu__name">
+                    Александр Терещенко
+                  </div>
+                  <div class="cabinet-menu__balance">
+                    баланс <br>
+                    <span> 374.51 бонус</span>
+                  </div>
+                </div>
               </div>
+              <a href="#" class="btn btn--gradient">
+                Пополнить счет
+              </a>
             </div>
-            <div class="login__right">
-              <h4>Вход</h4>
-              <p>
-                У вас еще нет аккаунта? <a href="#">Зарегистрироваться</a>
-              </p>
-              <form class="form form--login">
-                <div class="form__input-wrap">
-                  <span class="form__sup">Ваше имя</span>
-                  <input type="text" required>
-                </div>
-                <div class="form__input-wrap form__input-pasw">
-                  <span class="form__sup">Пароль</span>
-                  <input type="password" required>
-                  <span class="form__input-show"></span>
-                </div>
-                <div class="form__label-box">
-                  <label class="form__label">
-                    <input class="form__checkbox" type="checkbox">
-                    <span class="form__checkbox-fake"></span>
-                    <span class="form__label-text">Запомнить меня</span>
-                  </label>
-                  <a href="#">
-                    Забыли пароль?
-                  </a>
-                </div>
-                <div class="form__buttons">
-                  <button class="btn btn--orange">Войти</button>
-                  <a href="#" class="btn btn--orange2">Зарегистрироваться</a>
-                </div>
-              </form>
-            </div>
+
+            <ul class="cabinet-menu__list">
+              <li class="active">
+                <a href="#">
+                  <div class="cabinet-menu__icon">
+                    <img src="images/dest/icons/cabinet-1.svg" alt="icon">
+                  </div>
+                  <span>Личные даные</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="cabinet-menu__icon">
+                    <img src="images/dest/icons/cabinet-2.svg" alt="icon">
+                  </div>
+                  <span>Мой баланс</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="cabinet-menu__icon">
+                    <img src="images/dest/icons/cabinet-3.svg" alt="icon">
+                  </div>
+                  <span>Мои объявления</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="cabinet-menu__icon">
+                    <img src="images/dest/icons/cabinet-4.svg" alt="icon">
+                  </div>
+                  <span>Избранные</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="cabinet-menu__icon">
+                    <img src="images/dest/icons/cabinet-5.svg" alt="icon">
+                  </div>
+                  <span>Моя компания</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="cabinet-menu__icon">
+                    <img src="images/dest/icons/cabinet-6.svg" alt="icon">
+                  </div>
+                  <span>Черный список</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="cabinet-menu__icon">
+                    <img src="images/dest/icons/cabinet-7.svg" alt="icon">
+                  </div>
+                  <span>Выход</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
+        <div class="container-fluid__inner">
+          <h2 class="subtitle">
+            Личний кабинет
+          </h2>
+          <div class="breadcrumbs breadcrumbs--page">
+            <div class="breadcrumbs__inner">
+              <ul class="breadcrumbs__list">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Мои объявления</a></li>
+                <li><span>Подать объявление</span></li>
+              </ul>
+            </div>
+          </div>
 
+          <button class="cabinet-show">
+            <span></span>
+            Александр Терещенко
+          </button>
 
+          <div class="cabinet cabinet--moderator">
+            <h5 class="cabinet__title">
+              Заполните анкету
+            </h5>
+            <form class="form">
+              <div class="form__inner">
+                <div class="form__input-wrap">
+                  <span class="form__sup">Имя*</span>
+                  <input type="text" required>
+                </div>
+                <div class="form__input-wrap">
+                  <span class="form__sup">Фамилия*</span>
+                  <input type="text" required>
+                </div>
+                <div class="form__input-wrap">
+                  <span class="form__sup">Отчество*</span>
+                  <input type="text" required>
+                </div>
+              </div>
+              <div class="form__input-wrap form__input-singl form__input-date">
+                <span class="form__sup">Дата рождения</span>
+                <input type="text">
+              </div>
+              <div class="form__input-wrap form__input-singl">
+                <span class="form__sup">Укажите адрес прописки</span>
+                <input type="text">
+              </div>
+              <div class="form__input-wrap form__input-singl">
+                <span class="form__sup">Укажите адрес проживания</span>
+                <input type="text">
+              </div>
+              <div class="form__inner">
+                <div class="form__input-wrap">
+                  <span class="form__sup">Email</span>
+                  <input type="text" placeholder="example@gmail.com">
+                </div>
+                <div class="form__input-wrap">
+                  <span class="form__sup">Телефон</span>
+                  <input type="text" placeholder="+38 012 345 67 89">
+                </div>
+                <div class="form__input-wrap">
+                  <span class="form__sup">Телефон</span>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="form__inner form__inner--social">
+                <div class="form__input-wrap">
+                  <div class="form__input-img">
+                    <img src="images/dest/icons/viber.svg" alt="icon">
+                  </div>
+                  <input type="text" placeholder="+38 012 345 67 89">
+                </div>
+                <div class="form__input-wrap">
+                  <div class="form__input-img">
+                    <img src="images/dest/icons/telegram.svg" alt="icon">
+                  </div>
+                  <input type="text" placeholder="@example">
+                </div>
+                <div class="form__input-wrap">
+                  <div class="form__input-img">
+                    <img src="images/dest/icons/whatsapp-icon.svg" alt="icon">
+                  </div>
+                  <input type="text" placeholder="+38 012 345 67 89">
+                </div>
+              </div>
+              <p>
+                Подтверждение личности по паспорту. Загрузите копию паспорта (или фото): первая страница с фото, вторая
+                с местом выдачи паспорта и страница с пропиской
+              </p>
+              <div class="form__input-btn">
+                <div class="form__input-wrap">
+                  <span class="form__sup">Загрузить первою страницу</span>
+                  <button>Обзор...</button>
+                </div>
+                <span>Файл не выбран</span>
+              </div>
+              <div class="form__input-btn">
+                <div class="form__input-wrap">
+                  <span class="form__sup">Загрузить первою страницу</span>
+                  <button>Обзор...</button>
+                </div>
+                <span>Файл не выбран</span>
+              </div>
+              <div class="form__input-btn">
+                <div class="form__input-wrap">
+                  <span class="form__sup">Загрузить первою страницу</span>
+                  <button>Обзор...</button>
+                </div>
+                <span>Файл не выбран</span>
+              </div>
+              <p>
+                Загрузите Ваше фото на фоне страницы в паспорте, с фото владельца
+              </p>
+              <div class="form__input-btn">
+                <div class="form__input-wrap">
+                  <span class="form__sup">Загрузить фото</span>
+                  <button>Обзор...</button>
+                </div>
+                <span>Файл не выбран</span>
+              </div>
+              <p>
+                Укажите данные карты, для осуществления оплат на Вашу карту
+              </p>
+              <div class="form__input-card">
+                <div class="form__input-wrap">
+                  <span class="form__sup">Номер карты</span>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="form__input-card">
+                <div class="form__input-wrap">
+                  <span class="form__sup">IBAN</span>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="form__input-card">
+                <div class="form__input-wrap">
+                  <span class="form__sup">Идентификационный код</span>
+                  <input type="text">
+                </div>
+              </div>
+
+              <div class="form__buttons buttons-moderator">
+                <button class="btn btn--orange">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
     </div>
     <footer class="footer">
       <div class="container">
@@ -1109,13 +1304,17 @@
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="js/app.min.js"></script>
 </body>
