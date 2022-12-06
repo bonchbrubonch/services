@@ -1033,7 +1033,7 @@
                   <span>Мой баланс</span>
                 </a>
               </li>
-              <li class="active">
+              <li>
                 <a href="#">
                   <div class="cabinet-menu__icon">
                     <img src="images/dest/icons/cabinet-3.svg" alt="icon">
@@ -1041,7 +1041,7 @@
                   <span>Мои объявления</span>
                 </a>
               </li>
-              <li>
+              <li class="active">
                 <a href="#">
                   <div class="cabinet-menu__icon">
                     <img src="images/dest/icons/cabinet-4.svg" alt="icon">
@@ -1076,6 +1076,7 @@
             </ul>
           </div>
         </div>
+
         <div class="container-fluid__inner">
           <h2 class="subtitle">
             Личний кабинет
@@ -1084,7 +1085,7 @@
             <div class="breadcrumbs__inner">
               <ul class="breadcrumbs__list">
                 <li><a href="#">Главная</a></li>
-                <li><span>Объявление</span></li>
+                <li><span>Избранное</span></li>
               </ul>
             </div>
           </div>
@@ -1097,11 +1098,11 @@
           <div class="cabinet">
             <div class="cabinet__title-wrap">
               <h5 class="cabinet__title">
-                Мои объявления
+                Избранное
               </h5>
               <div class="cabinet__title-box">
                 <div class="cabinet__filter-selecet">
-                  <span>Сортировать по</span>
+                  <span>Искать по</span>
                   <select class="js-example-basic-single" name="state">
                     <option>Ответ на заказ</option>
                     <option>От дешевых к дорогим</option>
@@ -1110,14 +1111,13 @@
                     <option>По алфавиту от Я до А</option>
                   </select>
                 </div>
-                <a href="#" class="btn btn--orange">
-                  Подать объявление
-                </a>
               </div>
             </div>
-
-            <ul class="main__list">
-              <li class="card card--cabinet-ads">
+            <ul class="main__list main__list--faborites">
+              <li class="card card--favorites">
+                <button class="card__delete">
+                  Удалить
+                </button>
                 <ul class="card__stickers">
                   <li class="card__sticker-vip">
                     vip
@@ -1131,22 +1131,31 @@
                     <div class="card__answer">
                       Ответ на заказ
                     </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
+                    <div class="card__region">
+                      Черкаская обл
+                    </div>
+                    <div class="card__flag active">
+                      <svg class="card__flag-one" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11.4206 1.0152H1.82061V10.8658L5.78623 7.64574L6.62061 6.97158L7.45498 7.64574L11.4206 10.8658V1.0152ZM11.5331 0C11.6769 0 11.8144 0.0237938 11.9456 0.0713814C12.1519 0.140119 12.3159 0.248513 12.4378 0.396563C12.5597 0.544613 12.6206 0.708526 12.6206 0.888301V11.1117C12.6206 11.2915 12.5597 11.4554 12.4378 11.6034C12.3159 11.7515 12.1519 11.8599 11.9456 11.9286C11.8269 11.9709 11.6894 11.9921 11.5331 11.9921C11.2331 11.9921 10.9737 11.9075 10.755 11.7383L6.62061 8.37541L2.48623 11.7383C2.26123 11.9128 2.00186 12 1.70811 12C1.56436 12 1.42686 11.9762 1.29561 11.9286C1.08936 11.8599 0.925293 11.7515 0.803418 11.6034C0.681543 11.4554 0.620605 11.2915 0.620605 11.1117V0.888301C0.620605 0.708526 0.681543 0.544613 0.803418 0.396563C0.925293 0.248513 1.08936 0.140119 1.29561 0.0713814C1.42686 0.0237938 1.56436 0 1.70811 0H11.5331Z"
+                          fill="#EA4AAA" />
+                      </svg>
+                      <svg class="card__flag-two" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.9125 0C11.0563 0 11.1938 0.0237938 11.325 0.0713814C11.5313 0.140119 11.6953 0.248513 11.8172 0.396563C11.9391 0.544613 12 0.708526 12 0.888301V11.1117C12 11.2915 11.9391 11.4554 11.8172 11.6034C11.6953 11.7515 11.5313 11.8599 11.325 11.9286C11.2063 11.9709 11.0688 11.9921 10.9125 11.9921C10.6125 11.9921 10.3531 11.9075 10.1344 11.7383L6 8.37541L1.86563 11.7383C1.64062 11.9128 1.38125 12 1.0875 12C0.94375 12 0.80625 11.9762 0.675 11.9286C0.46875 11.8599 0.304688 11.7515 0.182813 11.6034C0.0609375 11.4554 0 11.2915 0 11.1117V0.888301C0 0.708526 0.0609375 0.544613 0.182813 0.396563C0.304688 0.248513 0.46875 0.140119 0.675 0.0713814C0.80625 0.0237938 0.94375 0 1.0875 0H10.9125Z"
+                          fill="#EA4AAA" />
+                      </svg>
+                    </div>
                   </div>
                   <div class="card__rate-wrap">
                     <span>Строительные материалы</span>
+                    <div class="rateYo"></div>
                   </div>
                   <a href="#" class="card__title">
                     Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
                   </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
                   <div class="card__info">
                     <div class="card__price">
                       1,000.00
@@ -1157,7 +1166,10 @@
                   </div>
                 </div>
               </li>
-              <li class="card card--cabinet-ads">
+              <li class="card card--favorites">
+                <button class="card__delete">
+                  Удалить
+                </button>
                 <ul class="card__stickers">
                   <li class="card__sticker-vip">
                     vip
@@ -1171,22 +1183,31 @@
                     <div class="card__answer">
                       Ответ на заказ
                     </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
+                    <div class="card__region">
+                      Черкаская обл
+                    </div>
+                    <div class="card__flag active">
+                      <svg class="card__flag-one" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11.4206 1.0152H1.82061V10.8658L5.78623 7.64574L6.62061 6.97158L7.45498 7.64574L11.4206 10.8658V1.0152ZM11.5331 0C11.6769 0 11.8144 0.0237938 11.9456 0.0713814C12.1519 0.140119 12.3159 0.248513 12.4378 0.396563C12.5597 0.544613 12.6206 0.708526 12.6206 0.888301V11.1117C12.6206 11.2915 12.5597 11.4554 12.4378 11.6034C12.3159 11.7515 12.1519 11.8599 11.9456 11.9286C11.8269 11.9709 11.6894 11.9921 11.5331 11.9921C11.2331 11.9921 10.9737 11.9075 10.755 11.7383L6.62061 8.37541L2.48623 11.7383C2.26123 11.9128 2.00186 12 1.70811 12C1.56436 12 1.42686 11.9762 1.29561 11.9286C1.08936 11.8599 0.925293 11.7515 0.803418 11.6034C0.681543 11.4554 0.620605 11.2915 0.620605 11.1117V0.888301C0.620605 0.708526 0.681543 0.544613 0.803418 0.396563C0.925293 0.248513 1.08936 0.140119 1.29561 0.0713814C1.42686 0.0237938 1.56436 0 1.70811 0H11.5331Z"
+                          fill="#EA4AAA" />
+                      </svg>
+                      <svg class="card__flag-two" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.9125 0C11.0563 0 11.1938 0.0237938 11.325 0.0713814C11.5313 0.140119 11.6953 0.248513 11.8172 0.396563C11.9391 0.544613 12 0.708526 12 0.888301V11.1117C12 11.2915 11.9391 11.4554 11.8172 11.6034C11.6953 11.7515 11.5313 11.8599 11.325 11.9286C11.2063 11.9709 11.0688 11.9921 10.9125 11.9921C10.6125 11.9921 10.3531 11.9075 10.1344 11.7383L6 8.37541L1.86563 11.7383C1.64062 11.9128 1.38125 12 1.0875 12C0.94375 12 0.80625 11.9762 0.675 11.9286C0.46875 11.8599 0.304688 11.7515 0.182813 11.6034C0.0609375 11.4554 0 11.2915 0 11.1117V0.888301C0 0.708526 0.0609375 0.544613 0.182813 0.396563C0.304688 0.248513 0.46875 0.140119 0.675 0.0713814C0.80625 0.0237938 0.94375 0 1.0875 0H10.9125Z"
+                          fill="#EA4AAA" />
+                      </svg>
+                    </div>
                   </div>
                   <div class="card__rate-wrap">
                     <span>Строительные материалы</span>
+                    <div class="rateYo"></div>
                   </div>
                   <a href="#" class="card__title">
                     Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
                   </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
                   <div class="card__info">
                     <div class="card__price">
                       1,000.00
@@ -1197,7 +1218,10 @@
                   </div>
                 </div>
               </li>
-              <li class="card card--cabinet-ads">
+              <li class="card card--favorites">
+                <button class="card__delete">
+                  Удалить
+                </button>
                 <div class="card__img">
                   <img src="images/dest/content/card/card-1.jpg" alt="img">
                 </div>
@@ -1206,22 +1230,31 @@
                     <div class="card__answer">
                       Ответ на заказ
                     </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
+                    <div class="card__region">
+                      Черкаская обл
+                    </div>
+                    <div class="card__flag active">
+                      <svg class="card__flag-one" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11.4206 1.0152H1.82061V10.8658L5.78623 7.64574L6.62061 6.97158L7.45498 7.64574L11.4206 10.8658V1.0152ZM11.5331 0C11.6769 0 11.8144 0.0237938 11.9456 0.0713814C12.1519 0.140119 12.3159 0.248513 12.4378 0.396563C12.5597 0.544613 12.6206 0.708526 12.6206 0.888301V11.1117C12.6206 11.2915 12.5597 11.4554 12.4378 11.6034C12.3159 11.7515 12.1519 11.8599 11.9456 11.9286C11.8269 11.9709 11.6894 11.9921 11.5331 11.9921C11.2331 11.9921 10.9737 11.9075 10.755 11.7383L6.62061 8.37541L2.48623 11.7383C2.26123 11.9128 2.00186 12 1.70811 12C1.56436 12 1.42686 11.9762 1.29561 11.9286C1.08936 11.8599 0.925293 11.7515 0.803418 11.6034C0.681543 11.4554 0.620605 11.2915 0.620605 11.1117V0.888301C0.620605 0.708526 0.681543 0.544613 0.803418 0.396563C0.925293 0.248513 1.08936 0.140119 1.29561 0.0713814C1.42686 0.0237938 1.56436 0 1.70811 0H11.5331Z"
+                          fill="#EA4AAA" />
+                      </svg>
+                      <svg class="card__flag-two" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.9125 0C11.0563 0 11.1938 0.0237938 11.325 0.0713814C11.5313 0.140119 11.6953 0.248513 11.8172 0.396563C11.9391 0.544613 12 0.708526 12 0.888301V11.1117C12 11.2915 11.9391 11.4554 11.8172 11.6034C11.6953 11.7515 11.5313 11.8599 11.325 11.9286C11.2063 11.9709 11.0688 11.9921 10.9125 11.9921C10.6125 11.9921 10.3531 11.9075 10.1344 11.7383L6 8.37541L1.86563 11.7383C1.64062 11.9128 1.38125 12 1.0875 12C0.94375 12 0.80625 11.9762 0.675 11.9286C0.46875 11.8599 0.304688 11.7515 0.182813 11.6034C0.0609375 11.4554 0 11.2915 0 11.1117V0.888301C0 0.708526 0.0609375 0.544613 0.182813 0.396563C0.304688 0.248513 0.46875 0.140119 0.675 0.0713814C0.80625 0.0237938 0.94375 0 1.0875 0H10.9125Z"
+                          fill="#EA4AAA" />
+                      </svg>
+                    </div>
                   </div>
                   <div class="card__rate-wrap">
                     <span>Строительные материалы</span>
+                    <div class="rateYo"></div>
                   </div>
                   <a href="#" class="card__title">
                     Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
                   </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
                   <div class="card__info">
                     <div class="card__price">
                       1,000.00
@@ -1232,7 +1265,10 @@
                   </div>
                 </div>
               </li>
-              <li class="card card--cabinet-ads">
+              <li class="card card--favorites">
+                <button class="card__delete">
+                  Удалить
+                </button>
                 <div class="card__img">
                   <img src="images/dest/content/card/card-1.jpg" alt="img">
                 </div>
@@ -1241,22 +1277,31 @@
                     <div class="card__answer">
                       Ответ на заказ
                     </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
+                    <div class="card__region">
+                      Черкаская обл
+                    </div>
+                    <div class="card__flag active">
+                      <svg class="card__flag-one" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11.4206 1.0152H1.82061V10.8658L5.78623 7.64574L6.62061 6.97158L7.45498 7.64574L11.4206 10.8658V1.0152ZM11.5331 0C11.6769 0 11.8144 0.0237938 11.9456 0.0713814C12.1519 0.140119 12.3159 0.248513 12.4378 0.396563C12.5597 0.544613 12.6206 0.708526 12.6206 0.888301V11.1117C12.6206 11.2915 12.5597 11.4554 12.4378 11.6034C12.3159 11.7515 12.1519 11.8599 11.9456 11.9286C11.8269 11.9709 11.6894 11.9921 11.5331 11.9921C11.2331 11.9921 10.9737 11.9075 10.755 11.7383L6.62061 8.37541L2.48623 11.7383C2.26123 11.9128 2.00186 12 1.70811 12C1.56436 12 1.42686 11.9762 1.29561 11.9286C1.08936 11.8599 0.925293 11.7515 0.803418 11.6034C0.681543 11.4554 0.620605 11.2915 0.620605 11.1117V0.888301C0.620605 0.708526 0.681543 0.544613 0.803418 0.396563C0.925293 0.248513 1.08936 0.140119 1.29561 0.0713814C1.42686 0.0237938 1.56436 0 1.70811 0H11.5331Z"
+                          fill="#EA4AAA" />
+                      </svg>
+                      <svg class="card__flag-two" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.9125 0C11.0563 0 11.1938 0.0237938 11.325 0.0713814C11.5313 0.140119 11.6953 0.248513 11.8172 0.396563C11.9391 0.544613 12 0.708526 12 0.888301V11.1117C12 11.2915 11.9391 11.4554 11.8172 11.6034C11.6953 11.7515 11.5313 11.8599 11.325 11.9286C11.2063 11.9709 11.0688 11.9921 10.9125 11.9921C10.6125 11.9921 10.3531 11.9075 10.1344 11.7383L6 8.37541L1.86563 11.7383C1.64062 11.9128 1.38125 12 1.0875 12C0.94375 12 0.80625 11.9762 0.675 11.9286C0.46875 11.8599 0.304688 11.7515 0.182813 11.6034C0.0609375 11.4554 0 11.2915 0 11.1117V0.888301C0 0.708526 0.0609375 0.544613 0.182813 0.396563C0.304688 0.248513 0.46875 0.140119 0.675 0.0713814C0.80625 0.0237938 0.94375 0 1.0875 0H10.9125Z"
+                          fill="#EA4AAA" />
+                      </svg>
+                    </div>
                   </div>
                   <div class="card__rate-wrap">
                     <span>Строительные материалы</span>
+                    <div class="rateYo"></div>
                   </div>
                   <a href="#" class="card__title">
                     Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
                   </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
                   <div class="card__info">
                     <div class="card__price">
                       1,000.00
@@ -1267,7 +1312,10 @@
                   </div>
                 </div>
               </li>
-              <li class="card card--cabinet-ads">
+              <li class="card card--favorites">
+                <button class="card__delete">
+                  Удалить
+                </button>
                 <div class="card__img">
                   <img src="images/dest/content/card/card-1.jpg" alt="img">
                 </div>
@@ -1276,22 +1324,31 @@
                     <div class="card__answer">
                       Ответ на заказ
                     </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
+                    <div class="card__region">
+                      Черкаская обл
+                    </div>
+                    <div class="card__flag active">
+                      <svg class="card__flag-one" width="13" height="12" viewBox="0 0 13 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11.4206 1.0152H1.82061V10.8658L5.78623 7.64574L6.62061 6.97158L7.45498 7.64574L11.4206 10.8658V1.0152ZM11.5331 0C11.6769 0 11.8144 0.0237938 11.9456 0.0713814C12.1519 0.140119 12.3159 0.248513 12.4378 0.396563C12.5597 0.544613 12.6206 0.708526 12.6206 0.888301V11.1117C12.6206 11.2915 12.5597 11.4554 12.4378 11.6034C12.3159 11.7515 12.1519 11.8599 11.9456 11.9286C11.8269 11.9709 11.6894 11.9921 11.5331 11.9921C11.2331 11.9921 10.9737 11.9075 10.755 11.7383L6.62061 8.37541L2.48623 11.7383C2.26123 11.9128 2.00186 12 1.70811 12C1.56436 12 1.42686 11.9762 1.29561 11.9286C1.08936 11.8599 0.925293 11.7515 0.803418 11.6034C0.681543 11.4554 0.620605 11.2915 0.620605 11.1117V0.888301C0.620605 0.708526 0.681543 0.544613 0.803418 0.396563C0.925293 0.248513 1.08936 0.140119 1.29561 0.0713814C1.42686 0.0237938 1.56436 0 1.70811 0H11.5331Z"
+                          fill="#EA4AAA" />
+                      </svg>
+                      <svg class="card__flag-two" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.9125 0C11.0563 0 11.1938 0.0237938 11.325 0.0713814C11.5313 0.140119 11.6953 0.248513 11.8172 0.396563C11.9391 0.544613 12 0.708526 12 0.888301V11.1117C12 11.2915 11.9391 11.4554 11.8172 11.6034C11.6953 11.7515 11.5313 11.8599 11.325 11.9286C11.2063 11.9709 11.0688 11.9921 10.9125 11.9921C10.6125 11.9921 10.3531 11.9075 10.1344 11.7383L6 8.37541L1.86563 11.7383C1.64062 11.9128 1.38125 12 1.0875 12C0.94375 12 0.80625 11.9762 0.675 11.9286C0.46875 11.8599 0.304688 11.7515 0.182813 11.6034C0.0609375 11.4554 0 11.2915 0 11.1117V0.888301C0 0.708526 0.0609375 0.544613 0.182813 0.396563C0.304688 0.248513 0.46875 0.140119 0.675 0.0713814C0.80625 0.0237938 0.94375 0 1.0875 0H10.9125Z"
+                          fill="#EA4AAA" />
+                      </svg>
+                    </div>
                   </div>
                   <div class="card__rate-wrap">
                     <span>Строительные материалы</span>
+                    <div class="rateYo"></div>
                   </div>
                   <a href="#" class="card__title">
                     Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
                   </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
                   <div class="card__info">
                     <div class="card__price">
                       1,000.00
@@ -1303,6 +1360,7 @@
                 </div>
               </li>
             </ul>
+
           </div>
           <div class="pagination">
             <ul class="pagination__list">

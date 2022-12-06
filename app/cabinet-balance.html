@@ -1025,7 +1025,7 @@
                   <span>Личные даные</span>
                 </a>
               </li>
-              <li>
+              <li class="active">
                 <a href="#">
                   <div class="cabinet-menu__icon">
                     <img src="images/dest/icons/cabinet-2.svg" alt="icon">
@@ -1033,7 +1033,7 @@
                   <span>Мой баланс</span>
                 </a>
               </li>
-              <li class="active">
+              <li>
                 <a href="#">
                   <div class="cabinet-menu__icon">
                     <img src="images/dest/icons/cabinet-3.svg" alt="icon">
@@ -1084,237 +1084,119 @@
             <div class="breadcrumbs__inner">
               <ul class="breadcrumbs__list">
                 <li><a href="#">Главная</a></li>
-                <li><span>Объявление</span></li>
+                <li><span>Мий баланс</span></li>
               </ul>
             </div>
           </div>
-
           <button class="cabinet-show">
             <span></span>
             Александр Терещенко
           </button>
 
-          <div class="cabinet">
-            <div class="cabinet__title-wrap">
-              <h5 class="cabinet__title">
-                Мои объявления
-              </h5>
-              <div class="cabinet__title-box">
-                <div class="cabinet__filter-selecet">
-                  <span>Сортировать по</span>
-                  <select class="js-example-basic-single" name="state">
-                    <option>Ответ на заказ</option>
-                    <option>От дешевых к дорогим</option>
-                    <option>От дорогих к дешевым</option>
-                    <option>По алфавиту от А до Я</option>
-                    <option>По алфавиту от Я до А</option>
-                  </select>
-                </div>
-                <a href="#" class="btn btn--orange">
-                  Подать объявление
-                </a>
-              </div>
-            </div>
 
-            <ul class="main__list">
-              <li class="card card--cabinet-ads">
-                <ul class="card__stickers">
-                  <li class="card__sticker-vip">
-                    vip
-                  </li>
-                </ul>
-                <div class="card__img">
-                  <img src="images/dest/content/card/card-1.jpg" alt="img">
+          <div class="cabinet">
+            <div class="cabinet__balance-inner">
+              <div class="cabinet__balance-left">
+                <h5 class="cabinet__title">
+                  Мои баланс
+                </h5>
+                <div class="cabinet__balance-box">
+                  <strong>374.51</strong>
+                  <a href="#" class="btn btn--gradient">Пополнить</a>
                 </div>
-                <div class="card__box">
-                  <div class="card__box-top">
-                    <div class="card__answer">
-                      Ответ на заказ
-                    </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
-                  </div>
-                  <div class="card__rate-wrap">
-                    <span>Строительные материалы</span>
-                  </div>
-                  <a href="#" class="card__title">
-                    Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
-                  </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
-                  <div class="card__info">
-                    <div class="card__price">
-                      1,000.00
-                    </div>
-                    <div class="card__date">
-                      10.10.2022, 21:16
-                    </div>
-                  </div>
+                <div class="cabinet__balance-date">
+                  <p>Баланс на </p>
+                  <span>10.10.2022, 21:16</span>
                 </div>
-              </li>
-              <li class="card card--cabinet-ads">
-                <ul class="card__stickers">
-                  <li class="card__sticker-vip">
-                    vip
-                  </li>
-                </ul>
-                <div class="card__img">
-                  <img src="images/dest/content/card/card-1.jpg" alt="img">
-                </div>
-                <div class="card__box">
-                  <div class="card__box-top">
-                    <div class="card__answer">
-                      Ответ на заказ
+              </div>
+              <div class="cabinet__balance-right">
+                <h5 class="cabinet__title">
+                  История платежей
+                </h5>
+                <div class="table-wrap">
+                  <div class="cabinet__table">
+                    <div class="cabinet__table-top">
+                      <strong>Дата</strong>
+                      <strong>Сума, грн</strong>
+                      <strong>Баланс, грн</strong>
                     </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
-                  </div>
-                  <div class="card__rate-wrap">
-                    <span>Строительные материалы</span>
-                  </div>
-                  <a href="#" class="card__title">
-                    Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
-                  </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
-                  <div class="card__info">
-                    <div class="card__price">
-                      1,000.00
-                    </div>
-                    <div class="card__date">
-                      10.10.2022, 21:16
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="card card--cabinet-ads">
-                <div class="card__img">
-                  <img src="images/dest/content/card/card-1.jpg" alt="img">
-                </div>
-                <div class="card__box">
-                  <div class="card__box-top">
-                    <div class="card__answer">
-                      Ответ на заказ
-                    </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
-                  </div>
-                  <div class="card__rate-wrap">
-                    <span>Строительные материалы</span>
-                  </div>
-                  <a href="#" class="card__title">
-                    Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
-                  </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
-                  <div class="card__info">
-                    <div class="card__price">
-                      1,000.00
-                    </div>
-                    <div class="card__date">
-                      10.10.2022, 21:16
+                    <div class="cabinet__table-wrap">
+                      <div class="cabinet__table-inner">
+                        <div class="cabinet__table-item cabinet__table-plus">
+                          <div class="cabinet__table-date">06.11.2022</div>
+                          <div class="cabinet__table-sum">+ 100.00 грн</div>
+                          <div class="cabinet__table-balance">374.51 грн</div>
+                        </div>
+                        <div class="cabinet__table-item cabinet__table-minus">
+                          <div class="cabinet__table-date">29.10.2022</div>
+                          <div class="cabinet__table-sum">- 9.99 грн</div>
+                          <div class="cabinet__table-balance">274.51 грн</div>
+                        </div>
+                        <div class="cabinet__table-item cabinet__table-minus">
+                          <div class="cabinet__table-date">08.09.2022</div>
+                          <div class="cabinet__table-sum">- 100.00 грн</div>
+                          <div class="cabinet__table-balance">284.50 грн</div>
+                        </div>
+                        <div class="cabinet__table-item cabinet__table-minus">
+                          <div class="cabinet__table-date">06.05.2022</div>
+                          <div class="cabinet__table-sum">- 250.50 грн</div>
+                          <div class="cabinet__table-balance">384.50 грн</div>
+                        </div>
+                        <div class="cabinet__table-item cabinet__table-minus">
+                          <div class="cabinet__table-date">06.05.2022</div>
+                          <div class="cabinet__table-sum">- 250.50 грн</div>
+                          <div class="cabinet__table-balance">384.50 грн</div>
+                        </div>
+                        <div class="cabinet__table-item cabinet__table-minus">
+                          <div class="cabinet__table-date">06.05.2022</div>
+                          <div class="cabinet__table-sum">- 250.50 грн</div>
+                          <div class="cabinet__table-balance">384.50 грн</div>
+                        </div>
+                        <div class="cabinet__table-item cabinet__table-plus">
+                          <div class="cabinet__table-date">06.11.2022</div>
+                          <div class="cabinet__table-sum">+ 100.00 грн</div>
+                          <div class="cabinet__table-balance">374.51 грн</div>
+                        </div>
+                        <div class="cabinet__table-item cabinet__table-minus">
+                          <div class="cabinet__table-date">29.10.2022</div>
+                          <div class="cabinet__table-sum">- 9.99 грн</div>
+                          <div class="cabinet__table-balance">274.51 грн</div>
+                        </div>
+                        <div class="cabinet__table-item cabinet__table-minus">
+                          <div class="cabinet__table-date">08.09.2022</div>
+                          <div class="cabinet__table-sum">- 100.00 грн</div>
+                          <div class="cabinet__table-balance">284.50 грн</div>
+                        </div>
+                        <div class="cabinet__table-item cabinet__table-minus">
+                          <div class="cabinet__table-date">06.05.2022</div>
+                          <div class="cabinet__table-sum">- 250.50 грн</div>
+                          <div class="cabinet__table-balance">384.50 грн</div>
+                        </div>
+                        <div class="cabinet__table-item cabinet__table-minus">
+                          <div class="cabinet__table-date">06.05.2022</div>
+                          <div class="cabinet__table-sum">- 250.50 грн</div>
+                          <div class="cabinet__table-balance">384.50 грн</div>
+                        </div>
+                        <div class="cabinet__table-item cabinet__table-minus">
+                          <div class="cabinet__table-date">06.05.2022</div>
+                          <div class="cabinet__table-sum">- 250.50 грн</div>
+                          <div class="cabinet__table-balance">384.50 грн</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </li>
-              <li class="card card--cabinet-ads">
-                <div class="card__img">
-                  <img src="images/dest/content/card/card-1.jpg" alt="img">
-                </div>
-                <div class="card__box">
-                  <div class="card__box-top">
-                    <div class="card__answer">
-                      Ответ на заказ
-                    </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
-                  </div>
-                  <div class="card__rate-wrap">
-                    <span>Строительные материалы</span>
-                  </div>
-                  <a href="#" class="card__title">
-                    Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
-                  </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
-                  <div class="card__info">
-                    <div class="card__price">
-                      1,000.00
-                    </div>
-                    <div class="card__date">
-                      10.10.2022, 21:16
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="card card--cabinet-ads">
-                <div class="card__img">
-                  <img src="images/dest/content/card/card-1.jpg" alt="img">
-                </div>
-                <div class="card__box">
-                  <div class="card__box-top">
-                    <div class="card__answer">
-                      Ответ на заказ
-                    </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
-                  </div>
-                  <div class="card__rate-wrap">
-                    <span>Строительные материалы</span>
-                  </div>
-                  <a href="#" class="card__title">
-                    Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
-                  </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
-                  <div class="card__info">
-                    <div class="card__price">
-                      1,000.00
-                    </div>
-                    <div class="card__date">
-                      10.10.2022, 21:16
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+            </div>
           </div>
-          <div class="pagination">
-            <ul class="pagination__list">
-              <li><span class="active">1</span></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><span>..</span></li>
-              <li><a href="#">99</a></li>
-            </ul>
+          <div class="cabinet__text-balance">
+            <p>Pulvinar sit arcu tempor quis tristique. Volutpat pellentesque mauris et volutpat a. Hac id vitae tellus integer tellus morbi. Volutpat faucibus ornare malesuada nulla. Viverra suspendisse erat orci eget mi interdum. Neque penatibus enim phasellus nulla odio elit sollicitudin. Non nisi urna venenatis arcu quam elementum viverra. Id quisque non lectus hendrerit viverra dui vitae mattis. Massa eget faucibus odio sit. Nascetur nec vel mauris id vel ultrices nulla in. Eleifend sit integer lacinia convallis ut.
+            </p>
+            <p>  Sapien quis ornare donec sem eget. Nec amet nec diam duis. Et enim leo sed metus quis eu lobortis. Lectus lacus enim vitae ultrices eu feugiat non. Amet faucibus laoreet aliquam amet. Aliquam egestas vitae nullam scelerisque tortor risus eget mauris faucibus. 
+              Sapien quis ornare donec sem eget. Nec amet nec diam duis. Et enim leo sed metus quis eu lobortis. Lectus lacus enim vitae ultrices eu feugiat non. Amet faucibus laoreet aliquam amet. Aliquam egestas vitae nullam scelerisque tortor risus eget mauris faucibus.</p>
+          </div>
           </div>
         </div>
+
 
       </div>
     </div>

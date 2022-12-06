@@ -1084,7 +1084,8 @@
             <div class="breadcrumbs__inner">
               <ul class="breadcrumbs__list">
                 <li><a href="#">Главная</a></li>
-                <li><span>Объявление</span></li>
+                <li><a href="#">Мои объявления</a></li>
+                <li><span>Подать объявление</span></li>
               </ul>
             </div>
           </div>
@@ -1095,227 +1096,204 @@
           </button>
 
           <div class="cabinet">
-            <div class="cabinet__title-wrap">
-              <h5 class="cabinet__title">
-                Мои объявления
-              </h5>
-              <div class="cabinet__title-box">
-                <div class="cabinet__filter-selecet">
-                  <span>Сортировать по</span>
-                  <select class="js-example-basic-single" name="state">
-                    <option>Ответ на заказ</option>
-                    <option>От дешевых к дорогим</option>
-                    <option>От дорогих к дешевым</option>
-                    <option>По алфавиту от А до Я</option>
-                    <option>По алфавиту от Я до А</option>
+            <h5 class="cabinet__title">
+              Подать объявление
+            </h5>
+            <form class="form">
+              <div class="form__inner">
+                <div class="form__select-wrap">
+                  <span class="form__sup">Категория *</span>
+                  <select class="js-example-basic-single">
+                    <option>Товары</option>
+                    <option>Товары2</option>
+                    <option>Товары3</option>
                   </select>
                 </div>
-                <a href="#" class="btn btn--orange">
-                  Подать объявление
-                </a>
+                <div class="form__select-wrap">
+                  <span class="form__sup">Подкатегория*</span>
+                  <select class="js-example-basic-single">
+                    <option>Авто</option>
+                    <option>Авто2</option>
+                    <option>Авто3</option>
+                  </select>
+                </div>
+                <div class="form__select-wrap">
+                  <span class="form__sup">Третья подкатегория*</span>
+                  <select class="js-example-basic-single">
+                    <option>Легковые автомобили </option>
+                    <option>Легковые автомобили 2</option>
+                    <option>Легковые автомобили 3</option>
+                  </select>
+                </div>
               </div>
-            </div>
-
-            <ul class="main__list">
-              <li class="card card--cabinet-ads">
-                <ul class="card__stickers">
-                  <li class="card__sticker-vip">
-                    vip
-                  </li>
-                </ul>
-                <div class="card__img">
-                  <img src="images/dest/content/card/card-1.jpg" alt="img">
-                </div>
-                <div class="card__box">
-                  <div class="card__box-top">
-                    <div class="card__answer">
-                      Ответ на заказ
-                    </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
-                  </div>
-                  <div class="card__rate-wrap">
-                    <span>Строительные материалы</span>
-                  </div>
-                  <a href="#" class="card__title">
-                    Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
-                  </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
-                  <div class="card__info">
-                    <div class="card__price">
-                      1,000.00
-                    </div>
-                    <div class="card__date">
-                      10.10.2022, 21:16
-                    </div>
+              <div class="form__inner form__inner-requred">
+                <div class="form__select-wrap form__requred-large">
+                  <span class="form__sup">Вид обьявления*</span>
+                  <select class="js-example-placeholder-single">
+                    <option></option>
+                    <option>Вид обьявления 1</option>
+                    <option>Вид обьявления 2</option>
+                    <option>Вид обьявления 3</option>
+                  </select>
+                  <div class="form__icon">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.67001 15C6.8135 15 5.03302 14.2625 3.72027 12.9497C2.40751 11.637 1.67001 9.85652 1.67001 8C1.67001 6.14348 2.40751 4.36301 3.72027 3.05025C5.03302 1.7375 6.8135 1 8.67001 1C10.5265 1 12.307 1.7375 13.6198 3.05025C14.9325 4.36301 15.67 6.14348 15.67 8C15.67 9.85652 14.9325 11.637 13.6198 12.9497C12.307 14.2625 10.5265 15 8.67001 15ZM8.67001 16C10.7917 16 12.8266 15.1571 14.3269 13.6569C15.8272 12.1566 16.67 10.1217 16.67 8C16.67 5.87827 15.8272 3.84344 14.3269 2.34315C12.8266 0.842855 10.7917 0 8.67001 0C6.54828 0 4.51345 0.842855 3.01316 2.34315C1.51287 3.84344 0.670013 5.87827 0.670013 8C0.670013 10.1217 1.51287 12.1566 3.01316 13.6569C4.51345 15.1571 6.54828 16 8.67001 16Z"
+                        fill="#343C66" />
+                      <path
+                        d="M7.67203 11C7.67203 10.8687 7.69789 10.7386 7.74815 10.6173C7.7984 10.496 7.87206 10.3857 7.96492 10.2929C8.05778 10.2 8.16802 10.1264 8.28934 10.0761C8.41067 10.0259 8.54071 10 8.67203 10C8.80335 10 8.93339 10.0259 9.05471 10.0761C9.17604 10.1264 9.28628 10.2 9.37913 10.2929C9.47199 10.3857 9.54565 10.496 9.59591 10.6173C9.64616 10.7386 9.67203 10.8687 9.67203 11C9.67203 11.2652 9.56667 11.5196 9.37913 11.7071C9.1916 11.8946 8.93724 12 8.67203 12C8.40681 12 8.15246 11.8946 7.96492 11.7071C7.77738 11.5196 7.67203 11.2652 7.67203 11ZM7.77003 4.995C7.75671 4.86884 7.77007 4.74129 7.80923 4.62062C7.84839 4.49996 7.91248 4.38888 7.99735 4.29458C8.08221 4.20029 8.18595 4.12489 8.30184 4.07328C8.41773 4.02167 8.54317 3.995 8.67003 3.995C8.79689 3.995 8.92233 4.02167 9.03822 4.07328C9.1541 4.12489 9.25784 4.20029 9.34271 4.29458C9.42757 4.38888 9.49167 4.49996 9.53083 4.62062C9.56999 4.74129 9.58334 4.86884 9.57003 4.995L9.22003 8.502C9.20827 8.63977 9.14523 8.76811 9.04338 8.86163C8.94154 8.95515 8.8083 9.00705 8.67003 9.00705C8.53176 9.00705 8.39852 8.95515 8.29667 8.86163C8.19483 8.76811 8.13179 8.63977 8.12003 8.502L7.77003 4.995Z"
+                        fill="#343C66" />
+                    </svg>
                   </div>
                 </div>
-              </li>
-              <li class="card card--cabinet-ads">
-                <ul class="card__stickers">
-                  <li class="card__sticker-vip">
-                    vip
-                  </li>
-                </ul>
-                <div class="card__img">
-                  <img src="images/dest/content/card/card-1.jpg" alt="img">
+              </div>
+              <div class="form__input-wrap form__input-singl">
+                <span class="form__sup">Укажите название*</span>
+                <input type="text" required>
+              </div>
+              <div class="form__btn-wrap form__add-main">
+                <button class="form__add-photo">
+                  <img src="images/dest/icons/photo-plus.svg" alt="img">
+                  <span>Загрузить фото</span>
+                </button>
+              </div>
+              <div class="form__btn-wrap form__add-submain">
+                <button class="form__add-photo">
+                  <img src="images/dest/icons/photo-plus.svg" alt="img">
+                  <span>Добавить фото</span>
+                </button>
+                <button class="form__add-photo">
+                  <img src="images/dest/icons/photo-plus.svg" alt="img">
+                  <span>Добавить фото</span>
+                </button>
+                <button class="form__add-photo">
+                  <img src="images/dest/icons/photo-plus.svg" alt="img">
+                  <span>Добавить фото</span>
+                </button>
+                <button class="form__add-photo">
+                  <img src="images/dest/icons/photo-plus.svg" alt="img">
+                  <span>Добавить фото</span>
+                </button>
+                <button class="form__add-photo">
+                  <img src="images/dest/icons/photo-plus.svg" alt="img">
+                  <span>Добавить фото</span>
+                </button>
+                <button class="form__add-photo">
+                  <img src="images/dest/icons/photo-plus.svg" alt="img">
+                  <span>Добавить фото</span>
+                </button>
+                <button class="form__add-photo">
+                  <img src="images/dest/icons/photo-plus.svg" alt="img">
+                  <span>Добавить фото</span>
+                </button>
+                <button class="form__add-photo">
+                  <img src="images/dest/icons/photo-plus.svg" alt="img">
+                  <span>Добавить фото</span>
+                </button>
+              </div>
+              <div class="form__input-btn">
+                <div class="form__input-wrap">
+                  <span class="form__sup">Загрузить документацию</span>
+                  <button>Обзор...</button>
                 </div>
-                <div class="card__box">
-                  <div class="card__box-top">
-                    <div class="card__answer">
-                      Ответ на заказ
-                    </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
-                  </div>
-                  <div class="card__rate-wrap">
-                    <span>Строительные материалы</span>
-                  </div>
-                  <a href="#" class="card__title">
-                    Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
-                  </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
-                  <div class="card__info">
-                    <div class="card__price">
-                      1,000.00
-                    </div>
-                    <div class="card__date">
-                      10.10.2022, 21:16
-                    </div>
-                  </div>
+                <span>Файл не выбран</span>
+              </div>
+              <button class="form__add-btn">
+                + загрузить еще документацию
+              </button>
+              <div class="form__input-wrap form__input-singl">
+                <span class="form__sup">Загрузить ссылку на страницу Сайта</span>
+                <input type="text" required placeholder="Ссылка">
+              </div>
+              <div class="form__textarea-wrap">
+                <textarea class="form__textarea-regular"></textarea>
+                <span class="form__sup">Описание *</span>
+              </div>
+              <div class="form__inner form__inner-price form__price-margin">
+                <div class="form__input-wrap">
+                  <span class="form__sup">Укажите цену *</span>
+                  <input type="number">
                 </div>
-              </li>
-              <li class="card card--cabinet-ads">
-                <div class="card__img">
-                  <img src="images/dest/content/card/card-1.jpg" alt="img">
+                <div class="form__select-wrap">
+                  <span class="form__sup">Выберите валюту</span>
+                  <select class="js-example-placeholder-currency">
+                    <option></option>
+                    <option>валютa</option>
+                    <option>валютa 2</option>
+                    <option>валютa 3</option>
+                  </select>
                 </div>
-                <div class="card__box">
-                  <div class="card__box-top">
-                    <div class="card__answer">
-                      Ответ на заказ
-                    </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
-                  </div>
-                  <div class="card__rate-wrap">
-                    <span>Строительные материалы</span>
-                  </div>
-                  <a href="#" class="card__title">
-                    Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
-                  </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
-                  <div class="card__info">
-                    <div class="card__price">
-                      1,000.00
-                    </div>
-                    <div class="card__date">
-                      10.10.2022, 21:16
-                    </div>
-                  </div>
+              </div>
+              <div class="form__inner">
+                <div class="form__select-wrap">
+                  <span class="form__sup">Страна*</span>
+                  <select class="js-example-placeholder-single">
+                    <option></option>
+                    <option>Украина2</option>
+                    <option>Украина3</option>
+                  </select>
                 </div>
-              </li>
-              <li class="card card--cabinet-ads">
-                <div class="card__img">
-                  <img src="images/dest/content/card/card-1.jpg" alt="img">
+                <div class="form__select-wrap">
+                  <span class="form__sup">Область*</span>
+                  <select class="js-example-placeholder-single">
+                    <option></option>
+                    <option>Область</option>
+                    <option>Область2</option>
+                    <option>Область3</option>
+                  </select>
                 </div>
-                <div class="card__box">
-                  <div class="card__box-top">
-                    <div class="card__answer">
-                      Ответ на заказ
-                    </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
-                  </div>
-                  <div class="card__rate-wrap">
-                    <span>Строительные материалы</span>
-                  </div>
-                  <a href="#" class="card__title">
-                    Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
-                  </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
-                  <div class="card__info">
-                    <div class="card__price">
-                      1,000.00
-                    </div>
-                    <div class="card__date">
-                      10.10.2022, 21:16
-                    </div>
-                  </div>
+                <div class="form__select-wrap">
+                  <span class="form__sup">Город</span>
+                  <select class="js-example-placeholder-single">
+                    <option></option>
+                    <option>Город</option>
+                    <option>Город2</option>
+                    <option>Город3</option>
+                  </select>
                 </div>
-              </li>
-              <li class="card card--cabinet-ads">
-                <div class="card__img">
-                  <img src="images/dest/content/card/card-1.jpg" alt="img">
+              </div>
+              <div class="form__inner">
+                <div class="form__input-wrap">
+                  <span class="form__sup">Email</span>
+                  <input type="text" placeholder="example@gmail.com">
                 </div>
-                <div class="card__box">
-                  <div class="card__box-top">
-                    <div class="card__answer">
-                      Ответ на заказ
-                    </div>
-                    <a href="#" class="card__btn-redact">
-                      Редактировать
-                    </a>
-                    <button class="card__btn-delete">
-                      Удалить
-                    </button>
-                  </div>
-                  <div class="card__rate-wrap">
-                    <span>Строительные материалы</span>
-                  </div>
-                  <a href="#" class="card__title">
-                    Продаю Кран Балку, опорную 3,2 т, пролет 12,5м, тельферную
-                  </a>
-                  <p class="card__text">
-                    Libero amet, quam ullamcorper cursus rhoncus ultricies varius sodales aenean. Malesuada eu mi sapien, massa mauris porttitor a. Aliquam morbi commodo elementum risus, nulla vulputate euismod dui malesuada. Sit velit at semper orci nulla aenean. Vitae gravida quis bibendum urna et, cursus ornare mattis. Sed in est a dictum tortor lorem. Nam pretium, integer quis id odio sit tortor.
-                  </p>
-                  <div class="card__info">
-                    <div class="card__price">
-                      1,000.00
-                    </div>
-                    <div class="card__date">
-                      10.10.2022, 21:16
-                    </div>
-                  </div>
+                <div class="form__input-wrap">
+                  <span class="form__sup">Телефон</span>
+                  <input type="text" placeholder="+38 012 345 67 89">
                 </div>
-              </li>
-            </ul>
-          </div>
-          <div class="pagination">
-            <ul class="pagination__list">
-              <li><span class="active">1</span></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><span>..</span></li>
-              <li><a href="#">99</a></li>
-            </ul>
+                <div class="form__input-wrap">
+                  <span class="form__sup">Телефон</span>
+                  <input type="text" placeholder="+38 012 345 67 89">
+                </div>
+              </div>
+              <div class="form__inner form__inner--social">
+                <div class="form__input-wrap">
+                  <div class="form__input-img">
+                    <img src="images/dest/icons/viber.svg" alt="icon">
+                  </div>
+                  <input type="text" placeholder="+38 012 345 67 89">
+                </div>
+                <div class="form__input-wrap">
+                  <div class="form__input-img">
+                    <img src="images/dest/icons/telegram.svg" alt="icon">
+                  </div>
+                  <input type="text" placeholder="@example">
+                </div>
+                <div class="form__input-wrap">
+                  <div class="form__input-img">
+                    <img src="images/dest/icons/whatsapp-icon.svg" alt="icon">
+                  </div>
+                  <input type="text" placeholder="+38 012 345 67 89">
+                </div>
+              </div>
+              <div class="form__buttons form__buttons-regular">
+                <button class="btn btn--orange2">Расширить объявления</button>
+                <span>или</span>
+                <button class="btn btn--orange">Опубликовать</button>
+              </div>
+            </form>
           </div>
         </div>
-
       </div>
     </div>
     <footer class="footer">

@@ -403,15 +403,117 @@
     .card__box-top {
       margin: 0 0 5px 0;
     }
-    .card__answer{
+
+    .card__answer {
       margin: 0;
     }
+
     .card__rate-wrap {
       margin: 0 0 3px 0;
     }
 
     .card__date {
       margin: 0 0 -60px 0;
+    }
+  }
+
+  &__delete {
+    font-family: 'Comfortaa', sans-serif;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #FF0000;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &--favorites {
+    margin: 0 0 55px 30px;
+    position: relative;
+
+    .card__delete {
+      position: absolute;
+      top: -26px;
+      right: 0;
+    }
+  }
+
+  &__publication {
+    margin: 0 10px 0 0;
+    font-size: 10px;
+    line-height: 12px;
+    color: #3850CC;
+  }
+
+  &--cabinet-company {
+    width: 100%;
+
+    .card__info {
+      justify-content: flex-start;
+    }
+
+    .card__img {
+      width: 138px;
+      height: 168px;
+    }
+
+    .card__box-top {
+      margin: 0 0 5px 0;
+    }
+
+    .card__rate-wrap {
+      margin: 0 0 0px 0;
+    }
+
+    .card__text {
+      margin: 0 0 15px 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -ms-line-clamp: 3;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      display: -webkit-box;
+      display: box;
+      word-wrap: break-word;
+      -webkit-box-orient: vertical;
+      box-orient: vertical;
+    }
+
+    .card__title {
+      margin: 0 0 35px 0;
+    }
+  }
+
+  &--ignore {
+    .card__box-top {
+      margin: -13px 0 8px 0;
+    }
+    .card__rate-wrap {
+      margin: 0 0 0px 0;
+    }
+    .card__title {
+      margin: 0 0 5px 0;
+    }
+    .jq-ry-container{
+      padding: 0;
+      margin: 0 0 15px 0;
+    }
+    .card__text {
+      margin: 0 0 15px 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -ms-line-clamp: 3;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      display: -webkit-box;
+      display: box;
+      word-wrap: break-word;
+      -webkit-box-orient: vertical;
+      box-orient: vertical;
+    }
+    .card__info{
+      justify-content: flex-start;
     }
   }
 }

@@ -19,6 +19,9 @@ $(function () {
   $(".js-example-placeholder-state").select2({
     placeholder: "Область",
   });
+  $(".js-example-placeholder-currency").select2({
+    placeholder: "Выберите валюту",
+  });
 
   $(document).ready(function () {
     $('.subcategory__select').select2();
