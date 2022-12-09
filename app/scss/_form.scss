@@ -96,11 +96,13 @@
       }
     }
   }
-  &__inner-half{
-    .form__input-wrap{
+
+  &__inner-half {
+    .form__input-wrap {
       width: calc(50% - 30px);
     }
   }
+
   &__input-pasw input {
     padding: 5px 45px 5px 15px !important;
   }
@@ -140,16 +142,55 @@
       position: relative;
     }
 
-    .form__icon {
+  }
+  .form__icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .form__icon-text {
+    display: none;
+    position: absolute;
+    top: -7px;
+    right: 30px;
+    width: 160px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #343C66;
+    border-radius: 5px;
+    padding: 15px;
+
+    &::before {
+      content: "";
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 5px;
+      top: 5px;
+      right: -14px;
+      width: 15px;
+      height: 20px;
+      border-top: 10px solid transparent;
+      border-left: 15px solid #343C66;
+      border-bottom: 10px solid transparent;
     }
   }
-  .select2-container--default .select2-selection--single .select2-selection__placeholder{
+  .form__icon:hover{
+    .form__icon-text {
+      display: block;
+    }
+    svg{
+      opacity: .5;
+    }
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__placeholder {
     color: #000000;
   }
+
   .select2-container--default .select2-selection--single .select2-selection__rendered {
     height: 50px;
     color: #000000;
@@ -305,10 +346,12 @@
     margin: -15px 0 0 0;
     display: flex;
     align-items: center;
+
     .btn--orange2 {
       margin: 0 0 0 25px;
     }
-    span{
+
+    span {
       display: block;
       margin: 0 30px;
     }
@@ -454,7 +497,9 @@
       color: #353d66;
     }
   }
-
+  &__add-margin{
+    margin: -35px 0 35px 0;
+  }
   &__textarea-wrap {
     margin: 0 0 40px 0;
     position: relative;
@@ -469,9 +514,11 @@
     outline: none;
     resize: none;
   }
-  &__textarea-regular{
+
+  &__textarea-regular {
     height: 304px;
   }
+
   &--login {
     max-width: 512px;
     width: 100%;
@@ -552,5 +599,10 @@
       color: $orange;
     }
   }
-
+  &__wrapper-requred{
+    display: none;
+    .form__inner-requred:last-child{
+      margin: 0 0 0 -30px;
+    }
+  }
 }

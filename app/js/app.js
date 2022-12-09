@@ -211,4 +211,10 @@ $(function () {
     $(".cabinet-menu__list li").removeClass("active");
     $(this).addClass("active");
   });
+
+  
+  $(".btn-toggle").on("click", function () {
+    $(".form__wrapper-requred").slideToggle();
+  });
+
 });

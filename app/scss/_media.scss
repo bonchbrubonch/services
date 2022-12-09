@@ -475,6 +475,10 @@
     flex-direction: column;
   }
 
+  .cabinet__title-company {
+    flex-direction: row;
+  }
+
   .cabinet__filter-selecet {
     margin: 10px 30px 0 0;
   }
@@ -976,17 +980,6 @@
     line-height: 120%;
   }
 
-  .characteristics a {
-    margin: 15px 0 0 0;
-    display: inline-flex;
-    color: $orange;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    text-decoration: underline;
-  }
-
   .documentation {
     margin: 0 0 20px 0;
     padding: 10px;
@@ -1425,6 +1418,7 @@
 }
 
 @media (max-width: 900px) {
+
   .form__checkbox-wrapper {
     margin: 20px 0 20px 0;
     flex-direction: column;
@@ -1849,6 +1843,14 @@
   .form__add-photo {
     width: calc(33.33333% - 30px);
   }
+
+  .form__add-margin {
+    margin: -10px 0 35px 0;
+  }
+
+  .form__wrapper-requred .form__inner-requred:last-child {
+    margin: 0;
+  }
 }
 
 @media (max-width: 700px) {
@@ -2237,17 +2239,21 @@
   .cabinet__table-inner {
     margin: 10px 0 0 0;
   }
-  .cabinet__table-item{
+
+  .cabinet__table-item {
     border: none;
   }
-  .cabinet__table-plus{
+
+  .cabinet__table-plus {
     background-color: transparent;
+
     .cabinet__table-date,
     .cabinet__table-sum,
-    .cabinet__table-balance{
+    .cabinet__table-balance {
       background-color: #fff;
     }
   }
+
   .cabinet__table-top strong,
   .cabinet__table-date,
   .cabinet__table-sum,
@@ -2255,11 +2261,20 @@
     padding: 10px 15px 10px 15px;
     width: 150px;
   }
+
   .cabinet__table-date,
   .cabinet__table-sum,
   .cabinet__table-balance {
     font-size: 12px;
     border-bottom: 1px solid #C0C0C0;
+  }
+
+  .cabinet__title-company {
+    flex-direction: column;
+  }
+
+  .form__add-margin {
+    margin: -15px 0 35px 0;
   }
 }
 
@@ -2390,7 +2405,8 @@
   }
 
   .card__btn-redact,
-  .card__btn-delete {
+  .card__btn-delete,
+  .card__delete {
     margin: 0 0 0 20px;
     font-size: 0;
     background-repeat: no-repeat;
@@ -2404,7 +2420,8 @@
     background-image: url("../images/dest/icons/repeat-1.svg");
   }
 
-  .card__btn-delete {
+  .card__btn-delete,
+  .card__delete {
     background-size: 15px 15px;
     background-image: url("../images/dest/icons/close-1.svg");
   }
@@ -2428,6 +2445,9 @@
     height: 130px;
   }
 
+  .cabinet .form__buttons {
+    margin: 0 0 10px 0;
+  }
 }
 
 @media (max-width: 359px) {
@@ -2466,6 +2486,13 @@
     .card__rate-wrap {
       flex-wrap: wrap;
       justify-content: flex-end;
+    }
+  }
+
+  .form__input-btn {
+    .form__sup {
+      padding: 0;
+      left: 5px;
     }
   }
 }
