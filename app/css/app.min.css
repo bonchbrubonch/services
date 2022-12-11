@@ -989,7 +989,6 @@ body {
 .form__input-btn input {
   background-color: transparent;
   outline: none;
-  cursor: pointer;
 }
 
 .form__inner {
