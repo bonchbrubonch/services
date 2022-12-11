@@ -31,28 +31,6 @@
     width: 100%;
   }
 
-  &__input-btn {
-    display: flex;
-    align-items: center;
-    margin: 0 0 20px 0;
-
-    .form__input-wrap {
-      margin: 0 20px 0 0;
-      max-width: 277px;
-      width: 100%;
-    }
-
-    button {
-      padding: 5px 15px;
-      width: 100%;
-      background-color: transparent;
-      border: 1px solid #C0C0C0;
-      border-radius: 5px;
-      text-align: left;
-      height: 50px;
-    }
-  }
-
   &__input-card {
     margin: 0 0 28px 0;
     max-width: 505px;
@@ -66,9 +44,39 @@
     color: #343C66;
   }
 
-  &__input-btn input {
-    background-color: transparent;
-    outline: none;
+
+  &__input-btn {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+
+    .form__input-wrap {
+      position: relative;
+      margin: 0 20px 0 0;
+      max-width: 277px;
+      height: 50px;
+      width: 100%;
+      cursor: pointer;
+      border: 1px solid #C0C0C0;
+      border-radius: 5px;
+      padding: 15px 15px;
+      &::before{
+        position: absolute;
+        content: "Файл не выбран";
+        right: -150px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    input {
+      background-color: transparent;
+      outline: none;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
   }
 
   &__inner {
@@ -142,6 +150,7 @@
     }
 
   }
+
   .form__icon {
     width: 16px;
     height: 16px;
@@ -177,11 +186,13 @@
       border-bottom: 10px solid transparent;
     }
   }
-  .form__icon:hover{
+
+  .form__icon:hover {
     .form__icon-text {
       display: block;
     }
-    svg{
+
+    svg {
       opacity: .5;
     }
   }
@@ -496,9 +507,11 @@
       color: #353d66;
     }
   }
-  &__add-margin{
+
+  &__add-margin {
     margin: -35px 0 35px 0;
   }
+
   &__textarea-wrap {
     margin: 0 0 40px 0;
     position: relative;
@@ -598,14 +611,17 @@
       color: $orange;
     }
   }
-  &__wrapper-requred{
+
+  &__wrapper-requred {
     display: none;
-    .form__inner-requred:last-child{
+
+    .form__inner-requred:last-child {
       margin: 0 0 0 -30px;
     }
   }
-  
+
 }
-.form__wrapper-requred{
+
+.form__wrapper-requred {
   margin: 0 0 40px 0;
 }

@@ -1863,6 +1863,16 @@
   .characteristics__btn {
     margin: 10px 0 0 0;
   }
+
+  .form__input-btn .form__input-wrap {
+    height: 40px;
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .form__input-btn .form__input-wrap::before {
+    right: -125px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -2288,6 +2298,10 @@
   .form__add-margin {
     margin: -15px 0 35px 0;
   }
+
+  .form__input-btn .form__input-wrap {
+    max-width: 180px;
+  }
 }
 
 
@@ -2467,6 +2481,12 @@
   .characteristics__list {
     height: 248px;
   }
+
+  .form__input-btn .form__input-wrap::before {
+    right: -75px;
+    width: 65px;
+    line-height: 120%;
+  }
 }
 
 @media (max-width: 359px) {
@@ -2500,13 +2520,6 @@
     .card__rate-wrap {
       flex-wrap: wrap;
       justify-content: flex-end;
-    }
-  }
-
-  .form__input-btn {
-    .form__sup {
-      padding: 0;
-      left: 5px;
     }
   }
 

@@ -947,32 +947,6 @@ body {
   width: 100%;
 }
 
-.form__input-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 0 20px 0;
-}
-
-.form__input-btn .form__input-wrap {
-  margin: 0 20px 0 0;
-  max-width: 277px;
-  width: 100%;
-}
-
-.form__input-btn button {
-  padding: 5px 15px;
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid #C0C0C0;
-  border-radius: 5px;
-  text-align: left;
-  height: 50px;
-}
-
 .form__input-card {
   margin: 0 0 28px 0;
   max-width: 505px;
@@ -986,9 +960,45 @@ body {
   color: #343C66;
 }
 
+.form__input-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.form__input-btn .form__input-wrap {
+  position: relative;
+  margin: 0 20px 0 0;
+  max-width: 277px;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+  padding: 15px 15px;
+}
+
+.form__input-btn .form__input-wrap::before {
+  position: absolute;
+  content: "Файл не выбран";
+  right: -150px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .form__input-btn input {
   background-color: transparent;
   outline: none;
+}
+
+.form__input-btn input[type="file"] {
+  display: none;
 }
 
 .form__inner {
@@ -6470,6 +6480,14 @@ body {
   .characteristics__btn {
     margin: 10px 0 0 0;
   }
+  .form__input-btn .form__input-wrap {
+    height: 40px;
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+  .form__input-btn .form__input-wrap::before {
+    right: -125px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -6828,6 +6846,9 @@ body {
   .form__add-margin {
     margin: -15px 0 35px 0;
   }
+  .form__input-btn .form__input-wrap {
+    max-width: 180px;
+  }
 }
 
 @media (max-width: 468px) {
@@ -6980,6 +7001,11 @@ body {
   .characteristics__list {
     height: 248px;
   }
+  .form__input-btn .form__input-wrap::before {
+    right: -75px;
+    width: 65px;
+    line-height: 120%;
+  }
 }
 
 @media (max-width: 359px) {
@@ -7009,10 +7035,6 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-  }
-  .form__input-btn .form__sup {
-    padding: 0;
-    left: 5px;
   }
   .characteristics__list {
     height: 275px;

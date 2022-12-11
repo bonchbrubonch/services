@@ -224,4 +224,6 @@ $(function () {
     $(".characteristics__btn").addClass("active");
   });
 
+
+  
 });
