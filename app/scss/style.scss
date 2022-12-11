@@ -1219,7 +1219,13 @@
     letter-spacing: 0.03em;
     color: #00040E;
   }
-
+  &__list{
+    height: 376px;
+    overflow: hidden;
+  }
+  &__list.active{
+    height: auto;
+  }
   li {
     margin: 0 0 20px 0;
     display: flex;
@@ -1241,7 +1247,7 @@
     color: #00040E;
   }
 
-  a {
+  &__btn {
     margin: 15px 0 0 0;
     display: inline-flex;
     color: $orange;
@@ -1250,8 +1256,14 @@
     font-size: 14px;
     line-height: 16px;
     text-decoration: underline;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
-
+  &__btn.active{
+    display: none;
+  }
 }
 
 /*end characteristics=========*/
@@ -2619,6 +2631,15 @@
     margin: 30px 0 0 0;
     p{
       margin: 0 0 20px 0;
+    }
+  }
+  .form__buttons-regular{
+    margin: 0;
+  }
+  .form__buttons-regular.active{
+    .btn-toggle,
+    span{
+      display: none;
     }
   }
 }

@@ -215,6 +215,13 @@ $(function () {
   
   $(".btn-toggle").on("click", function () {
     $(".form__wrapper-requred").slideToggle();
+    $(".form__buttons-regular").addClass("active");
+  });
+
+
+  $(".characteristics__btn").on("click", function () {
+    $(".characteristics__list").addClass("active");
+    $(".characteristics__btn").addClass("active");
   });
 
 });

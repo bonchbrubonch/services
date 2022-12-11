@@ -1574,6 +1574,10 @@ body {
   margin: 0 0 0 -30px;
 }
 
+.form__wrapper-requred {
+  margin: 0 0 40px 0;
+}
+
 .user {
   margin: 0 0 30px 0;
   display: -webkit-box;
@@ -3017,6 +3021,15 @@ body {
   color: #00040E;
 }
 
+.characteristics__list {
+  height: 376px;
+  overflow: hidden;
+}
+
+.characteristics__list.active {
+  height: auto;
+}
+
 .characteristics li {
   margin: 0 0 20px 0;
   display: -webkit-box;
@@ -3041,7 +3054,7 @@ body {
   color: #00040E;
 }
 
-.characteristics a {
+.characteristics__btn {
   margin: 15px 0 0 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -3052,6 +3065,14 @@ body {
   font-size: 14px;
   line-height: 16px;
   text-decoration: underline;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.characteristics__btn.active {
+  display: none;
 }
 
 /*end characteristics=========*/
@@ -4531,6 +4552,15 @@ body {
 
 .cabinet__text-balance p {
   margin: 0 0 20px 0;
+}
+
+.cabinet .form__buttons-regular {
+  margin: 0;
+}
+
+.cabinet .form__buttons-regular.active .btn-toggle,
+.cabinet .form__buttons-regular.active span {
+  display: none;
 }
 
 .cabinet-menu {
@@ -6432,6 +6462,15 @@ body {
   .form__wrapper-requred .form__inner-requred:last-child {
     margin: 0;
   }
+  .form__wrapper-requred {
+    margin: 0;
+  }
+  .characteristics__list {
+    height: 237px;
+  }
+  .characteristics__btn {
+    margin: 10px 0 0 0;
+  }
 }
 
 @media (max-width: 700px) {
@@ -6896,20 +6935,23 @@ body {
   .card__btn-redact,
   .card__btn-delete,
   .card__delete {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 5px;
     font-size: 0;
     background-repeat: no-repeat;
     background-position: center;
-    width: 20px;
+    width: 32px;
     height: 20px;
+    border-radius: 15px;
   }
   .card__btn-redact {
-    background-size: 19px 15px;
+    background-color: #D0F0FF;
+    background-size: 17px 13px;
     background-image: url("../images/dest/icons/repeat-1.svg");
   }
   .card__btn-delete,
   .card__delete {
-    background-size: 15px 15px;
+    background-color: #FFB5B5;
+    background-size: 11px 11px;
     background-image: url("../images/dest/icons/close-1.svg");
   }
   .form__add-photo {
@@ -6936,6 +6978,9 @@ body {
   .cabinet .form__buttons {
     margin: 0 0 10px 0;
   }
+  .characteristics__list {
+    height: 248px;
+  }
 }
 
 @media (max-width: 359px) {
@@ -6951,10 +6996,6 @@ body {
   }
   .cabinet__filter-selecet .select2.select2-container.select2-container--default {
     width: 140px !important;
-  }
-  .card__btn-redact,
-  .card__btn-delete {
-    margin: 0 0 0 10px;
   }
   .card--cabinet-ads .card__img {
     width: 80px;
@@ -6973,6 +7014,9 @@ body {
   .form__input-btn .form__sup {
     padding: 0;
     left: 5px;
+  }
+  .characteristics__list {
+    height: 275px;
   }
 }
 

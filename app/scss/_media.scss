@@ -1851,6 +1851,18 @@
   .form__wrapper-requred .form__inner-requred:last-child {
     margin: 0;
   }
+
+  .form__wrapper-requred {
+    margin: 0;
+  }
+
+  .characteristics__list {
+    height: 237px;
+  }
+
+  .characteristics__btn {
+    margin: 10px 0 0 0;
+  }
 }
 
 @media (max-width: 700px) {
@@ -2407,22 +2419,25 @@
   .card__btn-redact,
   .card__btn-delete,
   .card__delete {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 5px;
     font-size: 0;
     background-repeat: no-repeat;
     background-position: center;
-    width: 20px;
+    width: 32px;
     height: 20px;
+    border-radius: 15px;
   }
 
   .card__btn-redact {
-    background-size: 19px 15px;
+    background-color: #D0F0FF;
+    background-size: 17px 13px;
     background-image: url("../images/dest/icons/repeat-1.svg");
   }
 
   .card__btn-delete,
   .card__delete {
-    background-size: 15px 15px;
+    background-color: #FFB5B5;
+    background-size: 11px 11px;
     background-image: url("../images/dest/icons/close-1.svg");
   }
 
@@ -2448,6 +2463,10 @@
   .cabinet .form__buttons {
     margin: 0 0 10px 0;
   }
+
+  .characteristics__list {
+    height: 248px;
+  }
 }
 
 @media (max-width: 359px) {
@@ -2466,11 +2485,6 @@
 
   .cabinet__filter-selecet .select2.select2-container.select2-container--default {
     width: 140px !important;
-  }
-
-  .card__btn-redact,
-  .card__btn-delete {
-    margin: 0 0 0 10px;
   }
 
   .card--cabinet-ads .card__img {
@@ -2494,5 +2508,9 @@
       padding: 0;
       left: 5px;
     }
+  }
+
+  .characteristics__list {
+    height: 275px;
   }
 }
