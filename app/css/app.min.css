@@ -233,6 +233,41 @@ body {
 }
 
 /*end pagination===========*/
+.list {
+  padding: 30px;
+  background-color: #2b2c2cbd;
+}
+
+.list h1 {
+  margin: 0px 0px 1.25rem 0px;
+  font-size: 2.5rem;
+  line-height: 120%;
+  color: #fff;
+}
+
+.list h2 {
+  margin: 0px 0px 1rem 0px;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.list ol li {
+  list-style-type: decimal;
+}
+
+.list ol li a {
+  font-size: 16px;
+  color: #ebe691;
+}
+
+.list ol li a:visited {
+  color: #aaa768;
+}
+
+.list ol li::marker {
+  color: #fff;
+}
+
 @font-face {
   font-family: 'Comfortaa';
   src: url("../fonts/Comfortaa-Light.ttf") format("truetype"), url("../fonts/Comfortaa-Light.woff2") format("woff2"), url("../fonts/Comfortaa-Light.woff") format("woff");
