@@ -252,6 +252,7 @@ body {
 }
 
 .list ol li {
+  margin: 0 0 15px 0;
   list-style-type: decimal;
 }
 
@@ -6526,6 +6527,18 @@ body {
 }
 
 @media (max-width: 700px) {
+  .list h1 {
+    text-align: center;
+    font-size: 1.85rem;
+    margin: 0px 0px 1.25rem 0px;
+  }
+  .list h2 {
+    font-size: 1.125rem;
+    margin: 0px 0px 1rem 0px;
+  }
+  .list ol {
+    padding: 0 20px;
+  }
   .form__inner.form__inner-price.form__price-margin .form__select-wrap {
     margin: 0;
   }
